@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteHeader.Master.cs" Inherits="AddPostWebForm.Site1" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %></title>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+        <div>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="~/HomePage">Application name</a></div>
+                <div class="navbar-collapse collapse">
+                    
+                    <ul class="nav navbar-nav">
+                        
+
+                        <asp:PlaceHolder runat="server" ID="AdminAllAds" Visible="false">
+                            <li>
+                                <a runat="server" href="~/AdminAllAds">All ads</a>
+                            </li>
+                        </asp:PlaceHolder>
+
+                        <asp:PlaceHolder runat="server" ID="AllAds" Visible="true">
+                            <li>
+                                <a runat="server" href="~/AllAds">All ads</a>
+                            </li>
+                        </asp:PlaceHolder>
+
+                        <asp:PlaceHolder runat="server" ID="MyAds" Visible="false">
+                            <li>
+                                <a runat="server" href="~/MyAds">My ads</a>
+                            </li>
+                        </asp:PlaceHolder>
+
+                        <asp:PlaceHolder runat="server" ID="CategoryAdd" Visible="false">
+                            <li>
+                                <a runat="server" href="~/CategoryAdd">Categories</a>
+                            </li>
+                        </asp:PlaceHolder>
+                        
+                        <asp:PlaceHolder runat="server" ID="PostAd" Visible="true">
+                            
+                            <li class="right" style="position:absolute;right:150px; padding-top: 10px">
+                                <a runat="server" href="~/PostAdForm" class="postbutton" style="color: black; padding:2px 2px;">
+                                    Post Your Ad
+                                </a>
+                            </li>
+                        </asp:PlaceHolder>
+
+                        <%--<asp:PlaceHolder runat="server" ID="UserLogin" Visible="true">
+                            <li class="right" style="position:absolute;right:400px">
+                                <a runat="server" href="~/Login" style="float: right">Login</a>
+                            </li>
+                        </asp:PlaceHolder>
+
+                        <asp:PlaceHolder runat="server" ID="UserRegister" Visible="true">
+                            <li class="right" style="position:absolute;right:300px">
+                                <a runat="server" href="~/Register" style="float: right">Register</a>
+                            </li>
+                        </asp:PlaceHolder>--%>
+
+
+                        <asp:PlaceHolder runat="server" ID="LoggedUserName" Visible="false">
+                            <li class="right" style="position:absolute;right:360px;padding-top:20px">
+                                <asp:Label ID="Label1" runat="server" ForeColor="White"><i class="glyphicon glyphicon-user"></i></asp:Label>&nbsp;
+                                <asp:Label ID="lblUserName" runat="server" Text="" ForeColor="White" Font-Bold="true"></asp:Label>
+                            </li>
+                        </asp:PlaceHolder>
+
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            
+        </div>
+    
+</body>
+</html>
