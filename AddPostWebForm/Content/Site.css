@@ -1,0 +1,240 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+}
+
+.addForm-card {
+    position: absolute;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: none;
+    border-radius: 0.25rem;
+    margin-top: 10px; /* Added */
+    
+}
+
+.card-border {
+    border: 1px solid #dee2e6 !important;
+}
+
+.card-border-success {
+    border-color: #f40339 !important;
+}
+
+.inside-card {
+    position: absolute;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: none;
+    border-radius: 0.25rem;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    align-content: center;
+}
+
+.ad-card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.ad-card:hover {
+    box-shadow: 2px 2px 2px;
+    transform: scale(1.01);
+}
+
+.card-border {
+    border: 1px solid #dee2e6 !important;
+}
+
+.card-border-success {
+    border-color: #9ab6cc !important;
+}
+
+
+/* Create three equal columns that floats next to each other */
+.logincolumn {
+    float: left;
+    width: 25%;
+    
+    /*margin-left: 10px;*/
+}
+
+.loginpicture {
+    float: right;
+    width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.login-textbox {
+    border: 2px solid #9ab6cc;
+    border-radius: 20px;
+    padding: 8px 8px;
+    padding-left: 30px;
+    width: 260px;
+    outline: none;
+}
+
+.loginbutton {
+    background-color: #3724db;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 8px 8px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    width: 260px;
+}
+
+
+.postbutton {
+    background-color: #ffd800 !important;
+    border: 5px solid #ffd800;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.3s;
+    padding: 1px 1px;
+    text-decoration: solid;
+    text-decoration-color: #ffd800;
+    font-weight: bold;
+    cursor: pointer;
+    width: 200px;
+}
+
+.posttextbox {
+    padding: 12px;
+    width: 500px;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.dropdown {
+    padding: 10px;
+    width: 500px;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.descriptiontextbox {
+    padding: 12px;
+    width: 500px;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.addkey_btn {
+    background: none repeat scroll 0 0 #ffd800;
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Altis_Book';
+    font-size: 15px;
+    padding: 3px 15px;
+    width: 500px;
+    max-width: 500px;
+}
+
+.vr {
+    border-right: 1px solid gray; 
+    position: relative;
+    margin-right: -10px;
+}
+
+.searchtextbox {
+    padding: 10px;
+    width: 500px;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.searchbutton {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #3724db;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin:-1px;
+}
+
+
+
+
